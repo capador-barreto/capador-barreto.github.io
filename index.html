@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #0984e3;
+            --text: #636e72;
+            --bg: #f5f6fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--primary); margin: 0; font-size: 2.5rem; }
+        .subtitle { color: var(--accent); font-weight: bold; margin-bottom: 15px; }
+
+        .contact-info a {
+            margin: 0 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        section { margin-bottom: 30px; }
+        h2 { 
+            color: var(--primary); 
+            border-left: 4px solid var(--accent); 
+            padding-left: 15px; 
+            font-size: 1.5rem;
+        }
+
+        .item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--primary); }
+        .date { color: var(--accent); font-size: 0.9rem; }
+
+        .skills-tag {
+            display: inline-block;
+            background: var(--bg);
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px 2px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            .item-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>YOUR NAME</h1>
+        <div class="subtitle">Nature-Themed Game Designer & Developer</div>
+        <div class="contact-info">
+            <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> email@example.com</a>
+            <a href="#"><i class="fab fa-github"></i> github.com/username</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Lead Designer | Studio Name</span>
+                <span class="date">2024 - Present</span>
+            </div>
+            <ul>
+                <li>Developed complex card game mechanics inspired by ecological systems.</li>
+                <li>Balanced card power levels using statistical modeling.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-tag">Game Design</div>
+        <div class="skills-tag">HTML/CSS</div>
+        <div class="skills-tag">Project Management</div>
+        <div class="skills-tag">Spanish (Native)</div>
+    </section>
+</div>
+
+</body>
+</html>
